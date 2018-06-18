@@ -1,5 +1,17 @@
-go get github.com/davecgh/go-spew/spew
-
-go get github.com/gorilla/mux
-
+go get github.com/davecgh/go-spew/spew
+
+go get github.com/gorilla/mux
+
 go get github.com/joho/godotenv
+
+go get -d github.com/libp2p/go-libp2p/
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+cd $GOPATH/src/github.com/libp2p/go-libp2p
+
+make
+make deps
+
+go get github.com/cbergoon/merkletree

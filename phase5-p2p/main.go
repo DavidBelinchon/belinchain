@@ -158,7 +158,7 @@ func handleConn(conn net.Conn) {
 
 	scanner := bufio.NewScanner(conn)
 
-	// take in BPM from stdin and add it to blockchain after conducting necessary validation
+	// take in data from stdin and add it to blockchain after conducting necessary validation
 	go func() {
 		for scanner.Scan() {
 			data := scanner.Text()
